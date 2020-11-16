@@ -211,6 +211,7 @@ int main(int argc, char** args)
 	cout << "=========================================== RUNTIME ==============================================\n\n";
 	cout << timer.result<chrono::nanoseconds>() << " milliseconds" << endl;
 	cout << "\n--------------------------------------------------------------------------------------------------\n";
-
+	delete[] thrs;
+	delete[] results;
 	return 0;
 }
